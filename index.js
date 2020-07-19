@@ -55,7 +55,7 @@ const questions = [
 
 function promptUser() {
     inquirer.prompt(questions).then((answers) => {
-        console.log(answers);
+        // console.log(answers);
 
         if (answers.license == 'MIT') {
             answers.license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
@@ -83,8 +83,8 @@ ${answers.description}
 
 ---
 ## Installation/Usage Instructions
-${answers.install}  
-${answers.usage}  
+Install: ${answers.install}  
+Usage: ${answers.usage}  
 
 ## Contributors
 ${answers.contributor}
